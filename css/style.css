@@ -30,12 +30,16 @@ body {
   color: var(--accent-color);
 }
 /* Герой */
+
+.button {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
 .hero {
-  background-color: var(--futter-bg-color);
+  background-color: var(--footer-bg-color);
 }
 .hero-title {
   color: var(--white-text-color);
-  background-color: var(--footer-bg-color);
 }
 ul {
   list-style: none;
@@ -55,12 +59,12 @@ ul {
 }
 
 .contacts-nav .mail:hover,
-.mail:focus {
+.contacts-nav .mail:focus {
   color: var(--accent-color);
 }
 
 .contacts-nav .phone:hover,
-.phone:focus {
+.contacts-nav .phone:focus {
   color: var(--accent-color);
 }
 .contacts-nav {
@@ -97,11 +101,6 @@ ul {
 }
 
 /* Button */
-
-.button {
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
-}
 
 .button.secondary {
   color: var(--title-text-color);
