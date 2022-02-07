@@ -35,6 +35,7 @@ body {
 }
 .hero-title {
   color: var(--white-text-color);
+  background-color: var(--footer-bg-color);
 }
 ul {
   list-style: none;
@@ -53,8 +54,17 @@ ul {
   color: var(--accent-color);
 }
 
-.header-contacts:hover {
+.contacts-nav .mail:hover,
+.mail:focus {
   color: var(--accent-color);
+}
+
+.contacts-nav .phone:hover,
+.phone:focus {
+  color: var(--accent-color);
+}
+.contacts-nav {
+  color: var(--primary-text-color);
 }
 
 /* Feauters */
@@ -91,9 +101,6 @@ ul {
 .button {
   color: var(--white-text-color);
   background-color: var(--accent-color);
-}
-
-.button.primary {
 }
 
 .button.secondary {
