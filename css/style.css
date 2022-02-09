@@ -45,6 +45,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
 }
@@ -67,7 +71,8 @@ ul {
 .contacts-nav .phone:focus {
   color: var(--accent-color);
 }
-.contacts-nav {
+.contacts-nav .mail,
+.contacts-nav .phone {
   color: var(--primary-text-color);
 }
 
@@ -92,31 +97,60 @@ ul {
 .job {
   color: var(--primary-text-color);
 }
-.works .button {
-  color: var(--primary-bg-color);
-  background-color: var(--button-bg-color);
-}
+
 .examples {
   display: none;
 }
 
-/* Button */
-
-.button.secondary {
-  color: var(--title-text-color);
-  background-color: var(--button-bg-color);
+.works .button:hover,
+.works .button:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
 }
 
 /* footer */
 
-.footer {
+.footer-section {
   background-color: var(--footer-bg-color);
 }
 
-.address {
+.footer-contacts {
+  color: var(--primary-text-color);
+}
+
+.footer-links .link:hover,
+.footer-links .link:focus {
+  color: var(--accent-color);
+}
+
+.footer-links .link {
+  color: var(--primary-text-color);
+}
+
+.footer-links .adress {
   color: var(--white-text-color);
 }
 
-.footer-contacts {
+.footer-links .adress:hover,
+.footer-links .adress:focus {
+  color: var(--accent-color);
+}
+
+/* Отдельные стили для Портфолио */
+
+/* Portfolio Buttons */
+
+.works .button {
+  color: var(--title-text-color);
+  background-color: var(--button-bg-color);
+}
+
+/* Заголовки */
+
+.project-list .title {
+  color: var(--title-text-color);
+}
+
+.project-list .text {
   color: var(--primary-text-color);
 }
