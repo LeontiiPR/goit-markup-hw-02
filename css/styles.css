@@ -4,7 +4,7 @@
   --title-text-color: #212121;
   --primary-bg-color: #ffffff;
   --button-bg-color: #f5f4fa;
-  --white-text-color: #fff;
+  --white-text-color: rgba(255, 255, 255, 0.6);
   --footer-bg-color: #2f303a;
   --logo-color: #000000;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 .logo-footer {
-  color: var(--white-text-color);
+  color: var(--primary-bg-color);
 }
 
 .logo:hover {
@@ -32,14 +32,14 @@ body {
 /* Герой */
 
 .button {
-  color: var(--white-text-color);
+  color: var(--primary-bg-color);
   background-color: var(--accent-color);
 }
 .hero {
   background-color: var(--footer-bg-color);
 }
 .hero-title {
-  color: var(--white-text-color);
+  color: var(--primary-bg-color);
 }
 ul {
   list-style: none;
@@ -76,25 +76,21 @@ a {
   color: var(--primary-text-color);
 }
 
-/* Feauters */
+/* Единый класс для секций Преимущества,Чем мы занимаемся,Наша команда */
+.section-title {
+  color: var(--title-text-color);
+}
+.section-text {
+  color: var(--primary-text-color);
+}
+
+/* Преимущества */
+
 .feature-list .title {
   color: var(--title-text-color);
 }
+
 .feature-list .text {
-  color: var(--primary-text-color);
-}
-/* Чем мы занимаемся */
-.section {
-  color: var(--title-text-color);
-}
-/* команда */
-.team-title {
-  color: var(--title-text-color);
-}
-.name {
-  color: var(--title-text-color);
-}
-.job {
   color: var(--primary-text-color);
 }
 
@@ -102,10 +98,14 @@ a {
   display: none;
 }
 
-.works .button:hover,
-.works .button:focus {
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
+/* Команда */
+
+.team-list .title {
+  color: var(--title-text-color);
+}
+
+.team-list .text {
+  color: var(--primary-text-color);
 }
 
 /* footer */
@@ -123,12 +123,13 @@ a {
   color: var(--accent-color);
 }
 
-.footer-links .link {
-  color: var(--primary-text-color);
+.footer-links .link,
+.footer-links .phone {
+  color: var(--white-text-color);
 }
 
 .footer-links .adress {
-  color: var(--white-text-color);
+  color: var(--primary-bg-color);
 }
 
 .footer-links .adress:hover,
@@ -136,9 +137,19 @@ a {
   color: var(--accent-color);
 }
 
+.footer-links .phone:hover,
+.footer-links .phone:focus {
+  color: var(--accent-color);
+}
 /* Отдельные стили для Портфолио */
 
 /* Portfolio Buttons */
+
+.works .button:hover,
+.works .button:focus {
+  color: var(--title-text-color);
+  background-color: var(--accent-color);
+}
 
 .works .button {
   color: var(--title-text-color);
