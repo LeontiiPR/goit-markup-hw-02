@@ -12,14 +12,17 @@
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
 }
 
 .logo {
   color: var(--accent-color);
+  font-family: Raleway, sans-serif;
 }
 
 .logo-tittle {
   color: var(--logo-color);
+  font-family: Raleway, sans-serif;
 }
 
 .logo-footer {
@@ -94,7 +97,11 @@ a {
   color: var(--primary-text-color);
 }
 
-.examples {
+.portfolio {
+  display: none;
+}
+
+.features {
   display: none;
 }
 
