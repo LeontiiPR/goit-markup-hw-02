@@ -197,7 +197,7 @@ a {
 
 .works .button:hover,
 .works .button:focus {
-  color: var(--primary-bg-color);
+  color: var(--footer-bg-color);
   background-color: var(--accent-color);
 }
 
